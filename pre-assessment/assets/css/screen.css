@@ -1,12 +1,12 @@
 * {
 	margin: 0px;
 	padding: 0px;
-	/*Adds an invisible border around the elements of the page*/
+	/*makes the margin and padding be set to 0 for every element of the page*/
 }
 body {
 	text-align: center;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	background-image: url(../img/background.jpg);
+	background-image: url(../img/bg-tile.jpg);
 	background-repeat: repeat-x;
 	background-color: #171717;
 	font-size: 16px;
@@ -22,6 +22,9 @@ body {
 	border: 1px solid #CCC;
 }
 #header {
+	background-image: url(../img/header.webp);
+	background-repeat: repeat-x;
+	height: 140px;
 }
 #header h1 a {
 }
