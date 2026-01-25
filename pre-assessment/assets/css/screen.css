@@ -27,6 +27,11 @@ body {
 	height: 140px;
 }
 #header h1 a {
+	display:block; 
+	height: 140px;
+	text-indent: 100%;
+	white-space: nowrap; /* Make sures the text is wrapped in one line*/
+	overflow: hidden;
 }
 #nav {
 	background-color: #000;
@@ -75,4 +80,21 @@ body {
 	line-height: 25px;
 	margin-right: 20px;
 	margin-left: 20px;
+}
+
+.alert{
+	background-color: #183862;
+	color: #729cd4;
+}
+
+h2{
+	color:#de7214; 
+}
+
+h3{
+	color: #0da19e;
+}
+
+h4{
+	color: #2989c5;
 }
