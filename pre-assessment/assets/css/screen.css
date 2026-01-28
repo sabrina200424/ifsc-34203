@@ -98,3 +98,9 @@ h3{
 h4{
 	color: #2989c5;
 }
+
+.image{
+	float: right;
+	border: #de7214 8px solid;
+	margin: 10px;
+}
