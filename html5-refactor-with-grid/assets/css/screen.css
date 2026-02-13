@@ -1,0 +1,56 @@
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Fix Clearing Bugs */
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+main {
+/* background-image: url("../img/grid.png");  */
+width: 948px;
+margin: 20px auto;
+border: 1px solid #000;  
+}
+
+header.primary, footer.primary{
+ width:908px; 
+ /* width: 95.780% */
+ background: rgba(0, 0, 0, 0.4); 
+ padding: 20px;
+ float: left;
+ margin: 20px;
+}
+
+#blog{
+ width: 676px; 
+  /* width: 71.308% */
+  background: rgba(0, 0, 0, 0.6); 
+  padding: 20px;
+  float: left;
+  margin-left: 20px; 
+
+}
+
+aside {
+  background: rgba(0, 0, 0, 0.3); 
+  width: 212px;
+  /* width: 22.362*/
+  
+  padding: 20px;
+  float: left;
+  margin-left: 20px;
+}

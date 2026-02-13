@@ -19,10 +19,10 @@ h1 {
 }
 
 nav ul li{
-    display: flexbox;
+    
     justify-content: space-around;
-    margin-left: 300px; 
-    margin-right: 300px; 
+    margin-left: 350px; 
+    margin-right: 350px; 
     margin-bottom: 10px;
     padding: 20px; 
     padding-right: 2px; 
@@ -35,6 +35,7 @@ nav ul li{
 }
 
 nav ul li a{
+    display: block;  /* Makes sure that the whole area is clickable*/
     color: #fef2d4;
     text-decoration: none;
 }
