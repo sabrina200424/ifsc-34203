@@ -40,6 +40,17 @@ nav ul li a{
     text-decoration: none;
 }
 
+.lab{
+    padding: 20px;
+    background-color: #e17f29;
+    margin-left: 50px; 
+    margin-right: 50px; 
+    margin-top: 20px; 
+    color:#fff8e6
+}
 
+.lab-title{
+    color:#fef2d4; 
+}
 
 
