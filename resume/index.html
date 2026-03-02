@@ -1,0 +1,155 @@
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device, initial-scale=1.0">
+        <meta name="description" content="This is a page to Sabrina Kabir's Resume">
+        <meta name="author" content="Sabrina Kabir">
+        <title>Resume of Sabrina Kabir</title>
+        <link rel="stylsheet" href="assets/css/design.css">
+    </head>
+
+
+    <header class="container" id="top">
+        <nav class="primary">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<main itemscope itemtype="https://schema.org/Person" class="container">
+    <h1 class="page-title" itemprop="name">Full Name</h1>
+
+    <section id="about">
+        <h2>Personal Details</h2>
+        <div class="bio">
+            <img itemprop="image" src="https://placehold.co/600x600?text=Headshot" alt="Your Name">
+            <p itemprop="description">
+                Hi, I'm Sabrina Kabir. I am currently a senior at University of Arkansas at Little Rock. 
+                I am majoring in Information Science with a minor in Business Information Systems. 
+                Within my major, I really learned to enjoy different concepts such as SQL programming as well as
+                front-end development. I am actively seeking for to find a full-time position after I graduate in May of 2026. 
+            </p>
+        </div>
+
+        <dl class="details">
+            <dt>Name</dt>
+            <dd itemprop="name">
+                <span itemprop="givenName">Sabrina</span> <span itemprop="familyName">Kabir</span>
+            </dd>
+
+
+            <dt>Date of Birth</dt>
+            <dd><time itemprop="birthDate" datetime="2000-00-00">00/00/2000</time></dd>
+
+            <dt>Nationality</dt>
+            <dd itemprop="nationality">United States</dd>
+
+
+            <dt>Location</dt>
+            <dd itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+                <span itemprop="name">Arkansas</span>
+            </dd>
+
+            
+            <dt>Telephone</dt>
+            <dd>
+                <a itemprop="telephone" href="tel:5555555555">555.555.5555</a>
+            </dd>
+
+
+            <dt>Email</dt>
+            <dd>
+                <a itemprop="email" href="skabir@ualr.edu">Skabir@ualr.edu</a>
+            </dd>
+
+
+            <dt>Address</dt>
+            <dd itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="streetAdress">2801 S University</span>
+                <span itemprop="addressLocality">Little Rock</span>
+                <span itemprop="postalCode">72204</span>
+                <span itemprop="addressCountry">USA</span>
+            </dd>
+        </dl>
+
+
+        <ul class="related-links">
+            <li><a itemprop="sameAs" rel="me" href="https://sabrina200424.github.io/portfolio/index.html">Github Portfolio</a></li>
+            <li><a itemprop="sameAs" rel="me" href="www.linkedin.com/in/sabrina-kabir-profile">LinkedIn Profile</a></li>
+            <li><a itemprop="url" href="resume.pdf" download>pdf resume</a></li>
+        </ul>
+    </section>
+
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li class="skill" itemprop="knowsAbout">HTML</li>
+            <li class="skill" itemprop="knowsAbout">CSS</li>
+            <li class="skill" itemprop="knowsAbout">SQL</li>
+            <li class="skill" itemprop="knowsAbout">Java</li>
+            <li class="skill" itemprop="knowsAbout">Javascript</li>
+            <li class="skill" itemprop="knowsAbout">Python</li>
+            <li class="skill" itemprop="knowsAbout">Excel</li>
+        </ul>
+    </section>
+
+
+    <section id="experience">
+        <h2>Experience</h2>
+
+
+        <article class="job">
+
+            <h3 itemprop="jobTitle">Library Page (Volunteer)</h3>
+
+            <div itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+                <span itemprop="name">Central Arkansas Library System</span>
+                <span>May 2018 - August 2019</span>
+
+                <p itemprop="description">In this volunteer role, I was tasked to organize books to be mailed to the Downtown Library Branch.
+                    I also helped set up items to be used in advance for different events hosted in the library.
+                </p>
+
+                <span itemprop="location" itemscope itemtype="https://schema.org/Place">
+                    <a itemprop="url" href="https://cals.org/">Central Arkansas Library System</a>
+                    <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                        <span itemprop="addressLocality">Little Rock, Arkansas</span>
+                    </span>
+                </span>
+            </div>
+        </article>
+    </section>
+
+
+    <section id="education">
+        <h2>Education</h2>
+
+
+        <article class="certificate" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+            <h3 itemprop="description"><abbr title="Bachelor of Science">BA</abbr>Information Science
+            </h3>
+            <span itemprop="name">University of Arkansas at Little Rock</span>
+            <span itemprop="location" itemscope>Little Rock, Arkansas</span>
+            <span>2022-2026</span>
+        </article>
+    </section>
+</main>
+
+
+<footer>
+    <div id="copyright">
+        &copy; 2026 Sabrina Kabir | <a href="#top">Top</a>
+    </div>
+</footer>
+
+
+</html>

@@ -33,7 +33,7 @@ body {
 }
 
 main{
-    background-image: url(../img/grid.png); 
+    /* background-image: url(../img/grid.png);  */
     background-color: #ffebbd; 
     width: 948px;
     margin: 20px auto; 
@@ -80,18 +80,20 @@ h1 {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-template-columns: subgrid;
-    grid-template-rows: subgrid; 
+    /* grid-template-rows: subgrid;  */ 
 
 }
 
  #homeworkitem{
     background: #cd6f1d; 
+    text-align: center;
+    font-size: 20px; 
     grid-column-start: 1;
     grid-column-end: 10; 
     grid-row-start: 1;
     grid-row-end: 2;
-    text-align: center;
-    font-size: 20px; 
+    padding-right: 12px; 
+    
 } 
 
 
@@ -107,9 +109,23 @@ h1 {
 #labwork{
     background-color: #8a9a3a;
     grid-column-start: 10;
-    grid-column-end: 17; 
+    grid-column-end: 17;
     text-align: center;
     font-size: 20px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-left: 22px;
+}
+
+#resume{
+    background-color: #E2711D;
+    text-align: center;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-top: 15px;
 }
 
 #homeworkitem a{
@@ -133,6 +149,15 @@ h1 {
 
 .lab-title{
      color:#fef2d4;  
+}
+
+#resume a{
+    color:#fff8e6; 
+    text-decoration: none;
+}
+
+#resume li{
+    list-style-type: none;
 }
 
 
@@ -163,14 +188,29 @@ h1 {
 
  @media screen and (max-width: 600px){
     #homeworkitem{
-        background-color: #a77001;
+        background-color: #b47901;
     }
     
  }
 
 
- @media screen and (max-width: 600px) {
-    section.homework {
-        grid-template-columns: 1fr, 1fr;
+ @media screen and (max-width: 800px) and (min-width: 400px){
+    main{
+        width: 600px; 
+    }
+    div.homework {
+        grid-template-columns: (4fr, 1fr);    
+    }
+    #homeworkitem{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #labwork{
+        grid-column-start: 3; 
+        grid-column-end: 5; 
+    }
+    h1{
+        grid-column-start: 1;
+        grid-column-end: 4; 
     }
  }
