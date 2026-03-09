@@ -7,3 +7,148 @@ html{
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+
+.container{
+    max-width: 412px;
+    margin: 0px auto; 
+    background: rgba(0, 0, 0, 0.16);
+}
+
+
+:root{
+    --background-color-scheme: #f0dfeb; 
+    --text-color-scheme: #010d4c;
+    --color-scheme-blue: #4f518c;  
+    --tabs-color-scheme: #b390b1;   /* #b689b3*/
+    --visited-link-color: #04052e;  
+}
+
+img{
+    max-width: 100%; 
+}
+
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--background-color-scheme);
+    color: var(--text-color-scheme)
+    /* background-image: linear-gradient(to bottom, #f8ffe7, #f4ffda); */
+}
+
+
+main{
+    padding: 10px 20px; 
+}
+
+nav ul{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px; 
+}
+
+nav ul li{
+    list-style-type: none;
+    background-color: var(--tabs-color-scheme);
+    padding: 10px; 
+    margin: 6px; 
+    border-radius: 8px;
+    
+}
+
+
+nav ul li:hover{
+    box-shadow: 5px 5px var(--color-scheme-blue);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--text-color-scheme);
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+a:visited{
+    color: var(--visited-link-color);
+}
+
+main h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    font-family: georgia;
+    font-style: italic;
+}
+
+main h1:before, 
+main h1:after{
+    background-color: var(--text-color-scheme);
+    content: "\a0"; 
+    flex-grow: 1;
+    height: 1px; 
+    position: relative;
+    top: 20px; 
+}
+
+
+main h1:before{
+    margin-right: 10px;
+}
+
+main h1:after{
+    margin-left: 10px; 
+}
+
+dl{
+    display: grid; 
+    grid-template-columns: (4, 1fr);
+    margin-top: 30px;
+    border: 1.8px solid var(--text-color-scheme); 
+    padding: 10px;
+
+}
+
+dt{
+    font-weight: bold;
+    grid-column-start: 1;
+}
+
+dd{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-weight: 400;
+}
+
+dd a{
+    color: var(--text-color-scheme);
+    text-decoration: none; 
+}
+
+
+.related-links {
+    display:flex; 
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.related-links a{
+    background-color: var(--tabs-color-scheme);
+    padding: 4px;
+    margin-right: 4px;
+    text-decoration: none;
+    font-size: 0.78em;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+.related-links li{
+    margin-right: 12px;
+}
+
+
