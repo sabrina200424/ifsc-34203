@@ -26,15 +26,29 @@ html{
 }
 
 
+:root{
+    --body-background-color: #fff4da;
+    --container-background-color: #ffebbd;
+    --text-color-one: #fef2d4;
+    --text-color-two: #fff8e5; 
+    --header-background-color: #3b581c; 
+    --header-text-color: #cdd8a4; 
+    --orange-background-color: #cd6d1d;
+    --green-background-color: #8a9a3a; 
+
+
+}
+
+
 body {
     
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #fff4da; 
+    background-color: var(--body-background-color); 
 }
 
 main{
     /* background-image: url(../img/grid.png);  */
-    background-color: #ffebbd; 
+    background-color: var(--container-background-color); 
     width: 948px;
     margin: 20px auto; 
     display: grid; 
@@ -52,8 +66,8 @@ h1 {
     grid-row-start: 1;
     grid-row-end: 2;
     padding: 20px; 
-    background-color: #3b581c;
-    color: #cdd8a4; 
+    background-color: var(--header-background-color);
+    color: var(--header-text-color); 
 }
 
 /* nav ul li{
@@ -74,7 +88,6 @@ h1 {
 
 .homework{
     display: grid; 
-    /* background-color: #dae4b5; */
     grid-column-start: 1;
     grid-column-end: 17; 
     grid-row-start: 2;
@@ -85,7 +98,7 @@ h1 {
 }
 
  #homeworkitem{
-    background: #cd6f1d; 
+    background: var(--orange-background-color); 
     text-align: center;
     font-size: 20px; 
     grid-column-start: 1;
@@ -107,7 +120,7 @@ h1 {
 } */
 
 #labwork{
-    background-color: #8a9a3a;
+    background-color: var(--green-background-color);
     grid-column-start: 10;
     grid-column-end: 17;
     text-align: center;
@@ -118,7 +131,7 @@ h1 {
 }
 
 #resume{
-    background-color: #E2711D;
+    background-color: var(--orange-background-color);
     text-align: center;
     font-size: 20px;
     grid-column-start: 1;
@@ -129,7 +142,7 @@ h1 {
 }
 
 #homeworkitem a{
-    color: #fef2d4; 
+    color: var(--text-color-one); 
     text-decoration: none;
 }
 
@@ -142,17 +155,17 @@ h1 {
 }
 
 #labwork a{
-    color:#fff8e5; 
+    color: var(--text-color-two); 
     text-decoration: none;
 }
 
 
 .lab-title{
-     color:#fef2d4;  
+     color: var(--text-color-one);  
 }
 
 #resume a{
-    color:#fff8e6; 
+    color: var(--text-color-two); 
     text-decoration: none;
 }
 
@@ -186,15 +199,15 @@ h1 {
 } */
 
 
- @media screen and (max-width: 600px){
+ /* @media screen and (max-width: 600px){
     #homeworkitem{
         background-color: #b47901;
     }
     
- }
+ } */
 
 
- @media screen and (max-width: 800px) and (min-width: 400px){
+ /* @media screen and (max-width: 800px) and (min-width: 400px){
     main{
         width: 600px; 
     }
@@ -213,4 +226,4 @@ h1 {
         grid-column-start: 1;
         grid-column-end: 4; 
     }
- }
+ } */
