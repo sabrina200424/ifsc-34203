@@ -224,3 +224,36 @@ main.container{
     "education"
     "experience";
 }
+
+
+
+/* Tablet View */ 
+
+@media screen and (min-width: 768px){
+    
+    header.container{
+        max-width: 800px;
+    }
+
+
+
+    main.container{
+        max-width: 800px; 
+        grid-template-columns: (6, 1fr);
+        grid-template-areas: 
+        "title title"
+        "about about"
+        "skills experience"
+        ". education";
+
+    }
+
+
+    #about{
+        display: grid; 
+        grid-template-columns: (4, 1fr);
+         
+     }
+}
+
+
