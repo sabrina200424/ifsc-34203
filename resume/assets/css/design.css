@@ -240,6 +240,7 @@ main.container{
 
     main.container{
         max-width: 850px; 
+        display: grid;
         grid-template-columns: (6, 1fr);
         grid-template-areas: 
         "title title"
@@ -278,13 +279,18 @@ main.container{
 
    .related-links{
     grid-area: related;
+    display: flex;
+    justify-content: space-evenly;
 
    }
 
    .related-links li{
-    display: flex;
-    justify-content: space-around;
     font-size: 20px;
+   }
+
+   .related-links a{
+    padding: 10px;
+    border-radius: 6px;
    }
 
    #skills{
@@ -305,10 +311,26 @@ main.container{
     list-style-type: none;
     background-color: var(--color-scheme-blue2);
     color: var(--text-color-scheme);
+    margin-bottom: 20px;
     padding: 6px;
     border-radius: 2px;
     font-size: 13px;
     font-weight: 600;
+   }
+
+
+   #education{
+    grid-area: education; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+   }
+
+
+   #experience{
+    grid-area: experience;
+    /* grid-column-start: 4;
+    grid-column-end: 7; */
+
    }
 
 
