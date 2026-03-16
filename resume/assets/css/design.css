@@ -232,28 +232,45 @@ main.container{
 @media screen and (min-width: 768px){
     
     header.container{
-        max-width: 800px;
+        max-width: 850px;
     }
 
 
 
     main.container{
-        max-width: 800px; 
+        max-width: 850px; 
         grid-template-columns: (6, 1fr);
         grid-template-areas: 
         "title title"
         "about about"
         "skills experience"
-        ". education";
+        ". education"
+        ;
 
     }
 
-
     #about{
-        display: grid; 
-        grid-template-columns: (4, 1fr);
-         
-     }
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 300px 1fr auto;
+        grid-template-areas: 
+        "bio details details"
+        "related related related";
+    }
+
+    .bio{
+        grid-area: bio;
+    }
+
+   .details{
+        grid-area: details;
+   }
+
+   .related-links{
+    grid-area: related;
+   }
+
+     
 }
 
 
