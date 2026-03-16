@@ -19,7 +19,8 @@ html{
 :root{
     --background-color-scheme: #f0dfeb; 
     --text-color-scheme: #010d4c;
-    --color-scheme-blue: #4f518c;  
+    --color-scheme-blue: #4f518c;
+    --color-scheme-blue2: #91a0b5;  
     --tabs-color-scheme: #b390b1;   /* #b689b3*/
     --visited-link-color: #04052e;  
 }
@@ -243,7 +244,8 @@ main.container{
         grid-template-areas: 
         "title title"
         "about about"
-        "skills experience"
+        "skills"
+        "experience"
         ". education"
         ;
 
@@ -258,19 +260,58 @@ main.container{
         "related related related";
     }
 
+    img{
+        grid-area: img;
+        background-color: var(--text-color-scheme);
+    }
+
     .bio{
         grid-area: bio;
+        padding: 8px;
+        background: rgba(201, 164, 181, 0.4);
     }
 
    .details{
+        margin-top: 2px;
         grid-area: details;
    }
 
    .related-links{
     grid-area: related;
+
    }
 
-     
+   .related-links li{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+   }
+
+   #skills{
+    grid-area: skills;
+    
+   }  
+
+   #skills ul {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+   }
+
+
+   #skills ul li{
+    list-style-type: none;
+    background-color: var(--color-scheme-blue2);
+    color: var(--text-color-scheme);
+    padding: 6px;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: 600;
+   }
+
+
 }
 
 
