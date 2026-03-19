@@ -1,224 +1,211 @@
-
-
-html{
-    box-sizing:border-box; 
+html {
+  box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-
-.container{
-    max-width: 412px;
-    margin: 0px auto; 
-    background: rgba(150, 147, 147, 0.16);
+.container {
+  max-width: 412px;
+  margin: 0px auto;
+  background: rgba(150, 147, 147, 0.16);
 }
 
-
-:root{
-    --background-color-scheme: #f0dfeb; 
-    --text-color-scheme: #010d4c;
-    --color-scheme-blue: #4f518c;
-    --color-scheme-blue2: #91a0b5;  
-    --tabs-color-scheme: #b390b1;   /* #b689b3*/
-    --visited-link-color: #04052e;  
+:root {
+  --background-color-scheme: #f0dfeb;
+  --text-color-scheme: #010d4c;
+  --color-scheme-blue: #4f518c;
+  --color-scheme-blue2: #91a0b5;
+  --tabs-color-scheme: #b390b1; /* #b689b3*/
+  --visited-link-color: #04052e;
 }
 
-
-.hiddentitle{
-    clip: rect(0 0 0 0);
-    margin: -1px; 
-    padding: 0px; 
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    
+.hiddentitle {
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0px;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
 }
 
-
-img{
-    max-width: 100%; 
+img {
+  max-width: 100%;
 }
 
-
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: var(--background-color-scheme);
-    color: var(--text-color-scheme)
-    /* background-image: linear-gradient(to bottom, #f8ffe7, #f4ffda); */
+body {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: var(--background-color-scheme);
+  color: var(--text-color-scheme);
+  /* background-image: linear-gradient(to bottom, #f8ffe7, #f4ffda); */
 }
 
-
-main{
-    padding: 10px 20px; 
+main {
+  padding: 10px 20px;
 }
 
-nav ul{
-    display: grid;
-    list-style-type: none;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 20px; 
+nav ul {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
 }
 
-nav ul li{
-    list-style-type: none;
-    background-color: var(--tabs-color-scheme);
-    padding: 10px; 
-    margin: 6px; 
-    border-radius: 8px;
-    
+nav ul li {
+  list-style-type: none;
+  background-color: var(--tabs-color-scheme);
+  padding: 10px;
+  margin: 6px;
+  border-radius: 8px;
 }
 
-
-nav ul li:hover{
-    box-shadow: 5px 5px var(--color-scheme-blue);
+nav ul li:hover {
+  box-shadow: 5px 5px var(--color-scheme-blue);
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: var(--text-color-scheme);
-    display: block;
-    text-align: center;
-    font-weight: 600;
-    
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color-scheme);
+  display: block;
+  text-align: center;
+  font-weight: 600;
 }
 
-a:visited{
-    color: var(--visited-link-color);
+a:visited {
+  color: var(--visited-link-color);
 }
 
-main h1{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 32px;
-    font-family: georgia;
-    font-style: italic;
+main h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  font-family: georgia;
+  font-style: italic;
 }
 
-main h1:before, 
-main h1:after{
-    background-color: var(--text-color-scheme);
-    content: "\a0"; 
-    flex-grow: 1;
-    height: 1px; 
-    position: relative;
-    top: 20px; 
+main h1:before,
+main h1:after {
+  background-color: var(--text-color-scheme);
+  content: "\a0";
+  flex-grow: 1;
+  height: 1px;
+  position: relative;
+  top: 20px;
 }
 
-
-main h1:before{
-    margin-right: 10px;
+main h1:before {
+  margin-right: 10px;
 }
 
-main h1:after{
-    margin-left: 10px; 
+main h1:after {
+  margin-left: 10px;
 }
 
-dl{
-    display: grid; 
-    grid-template-columns: (4, 1fr);
-    margin-top: 30px;
-    border: 1.8px solid var(--text-color-scheme); 
-    padding: 10px;
-
+dl {
+  display: grid;
+  grid-template-columns: (4, 1fr);
+  margin-top: 30px;
+  border: 1.8px solid var(--text-color-scheme);
+  padding: 10px;
 }
 
-dt{
-    font-weight: bold;
-    grid-column-start: 1;
+dt {
+  font-weight: bold;
+  grid-column-start: 1;
 }
 
-dd{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    font-weight: 400;
+dd {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  font-weight: 400;
 }
 
-dd a{
-    color: var(--text-color-scheme);
-    text-decoration: none; 
+dd a {
+  color: var(--text-color-scheme);
+  text-decoration: none;
 }
-
 
 .related-links {
-    display:flex; 
-    text-align: center;
-    justify-content: center;
-    list-style-type: none;
-    margin-top: 40px;
-    margin-right: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 40px;
+  margin-right: 30px;
 }
 
-.related-links a{
-    background-color: var(--tabs-color-scheme);
-    color: var(--text-color-scheme); 
-    padding: 4px;
-    margin-right: 4px;
-    text-decoration: none;
-    font-size: 0.78em;
-    font-weight: 600;
-    border-radius: 2px;
+.related-links a {
+  background-color: var(--tabs-color-scheme);
+  color: var(--text-color-scheme);
+  padding: 4px;
+  margin-right: 4px;
+  text-decoration: none;
+  font-size: 0.78em;
+  font-weight: 600;
+  border-radius: 2px;
 }
 
-.related-links li{
-     margin-right: 2px; 
+.related-links li {
+  margin-right: 2px;
 }
 
-
-.related-links a:hover{
-    box-shadow: 2.5px 2.5px var(--color-scheme-blue);
+.related-links a:hover {
+  box-shadow: 2.5px 2.5px var(--color-scheme-blue);
 }
 
-#skills li{
-    list-style-type: disc;
+#skills li {
+  list-style-type: disc;
 }
 
 .job,
-.certificate{
-    border: 2px double var(--color-scheme-blue);
-    padding: 18px;
+.certificate {
+  border: 2px double var(--color-scheme-blue);
+  padding: 18px;
 }
 
-.job *[itemprop="jobTitle"], 
-.job *[itemprop="name"], 
-.job *[itemprop="url"], 
-.job *[itemprop="addressLocality"], 
+.job *[itemprop="jobTitle"],
+.job *[itemprop="name"],
+.job *[itemprop="url"],
+.job *[itemprop="addressLocality"],
 .certificate *[itemprop="name"] {
-    display:block; 
+  display: block;
 }
 
-footer{
-    text-align: center;
-    padding-top: 20px; 
-    padding-bottom: 10px; 
+footer {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-.page-title{
-    grid-area: title; 
+.page-title {
+  grid-area: title;
 }
 
-#about{
-    grid-area: about; 
+#about {
+  grid-area: about;
 }
 
-#skills{
-    grid-area: skills; 
+#skills {
+  grid-area: skills;
 }
 
-#experience{
-    grid-area: experience;
+#experience {
+  grid-area: experience;
 }
 
-#education{
-    grid-area: education;
+#education {
+  grid-area: education;
 }
 
-
-main.container{
-    display: grid; 
-    grid-template-areas: 
+main.container {
+  display: grid;
+  grid-template-areas:
     "title"
     "about"
     "skills"
@@ -226,91 +213,80 @@ main.container{
     "experience";
 }
 
+/* Tablet View */
 
+@media screen and (min-width: 768px) {
+  header.container {
+    max-width: 850px;
+  }
 
-/* Tablet View */ 
+  main.container {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: (6, 1fr);
+    grid-template-areas:
+      "title title title title title title"
+      "about about about about about about"
+      "skills skills skills skills skills skills"
+      "experience experience experience education education education";
+  }
 
-@media screen and (min-width: 768px){
-    
-    header.container{
-        max-width: 850px;
-    }
+  #about {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 300px 1fr auto;
+    grid-template-areas:
+      "bio details details"
+      "related related related";
+  }
 
+  img {
+    grid-area: img;
+    background-color: var(--text-color-scheme);
+  }
 
+  .bio {
+    grid-area: bio;
+    padding: 8px;
+    background: rgba(201, 164, 181, 0.4);
+  }
 
-    main.container{
-        max-width: 850px; 
-        display: grid;
-        grid-template-columns: (6, 1fr);
-        grid-template-areas: 
-        "title title"
-        "about about"
-        "skills skills"
-        "experience education"
-        ;
+  .details {
+    margin-top: 2px;
+    grid-area: details;
+  }
 
-    }
-
-    #about{
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 300px 1fr auto;
-        grid-template-areas: 
-        "bio details details"
-        "related related related";
-    }
-
-    img{
-        grid-area: img;
-        background-color: var(--text-color-scheme);
-    }
-
-    .bio{
-        grid-area: bio;
-        padding: 8px;
-        background: rgba(201, 164, 181, 0.4);
-    }
-
-   .details{
-        margin-top: 2px;
-        grid-area: details;
-   }
-
-   .related-links{
+  .related-links {
     grid-area: related;
     display: flex;
     justify-content: space-evenly;
+  }
 
-   }
-
-   .related-links li{
+  .related-links li {
     font-size: 20px;
-   }
+  }
 
-   .related-links a{
+  .related-links a {
     padding: 10px;
     border-radius: 6px;
-   }
+  }
 
-   .related-links a:hover{
+  .related-links a:hover {
     box-shadow: 5px 5px var(--color-scheme-blue);
-   }
+  }
 
-   #skills{
+  #skills {
     grid-area: skills;
-    
-   }  
+  }
 
-   #skills ul {
+  #skills ul {
     margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
-   }
+  }
 
-
-   #skills ul li{
+  #skills ul li {
     list-style-type: none;
     background-color: var(--color-scheme-blue2);
     color: var(--text-color-scheme);
@@ -319,56 +295,66 @@ main.container{
     border-radius: 2px;
     font-size: 13px;
     font-weight: 600;
-   }
+  }
 
-
-   #education{
+  #education {
     grid-area: education;
-    margin-right: 40px; 
-    
-   }
+    margin-right: 40px;
+  }
 
-
-   #experience{
+  #experience {
     grid-area: experience;
     margin-right: 60px;
     margin-bottom: 20px;
-
-   }
-
-
+  }
 }
-
 
 /* Website View */
 
+@media screen and (min-width: 992px) {
+  header.container {
+    max-width: 1100px;
+  }
 
-@media screen and (min-width: 992px){
+  main.container {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-areas:
+      "title title title"
+      "img description description"
+      "details details details"
+      "experience experience ."
+      "skills skills skills"
+      "education education .";
+  }
 
-    header.container{
-        max-width: 1100px;
-    }
-    
+  .description {
+    grid-area: description;
+  }
 
-    main.container{
-        max-width: 1100px;
-        display: grid;
-        grid-template-columns: (12, 1fr);
-        grid-template-areas:
-         "title title title"
-         "img description";
-    }
+  img {
+    grid-area: img;
+  }
+
+  .details {
+    grid-area: details;
+  }
+
+  #experience {
+    grid-area: experience;
+  }
+
+  #education {
+    grid-area: education;
+  }
+
+  #skills {
+    grid-area: skills;
+  }
 
 
-    .description{
-        grid-area: description; 
-    }
-
-    img{
-        grid-area: img;
-    }
-
-
+  .related-links{
+    grid-area: related;
+  }
 }
-
-
