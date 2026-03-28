@@ -203,6 +203,19 @@ footer {
   grid-area: education;
 }
 
+.bio {
+  grid-area: bio;
+}
+
+img {
+  grid-area: img;
+}
+
+.details{
+  grid-area: details;
+}
+
+
 main.container {
   display: grid;
   grid-template-areas:
@@ -322,11 +335,10 @@ main.container {
     grid-template-columns: repeat (3, 1fr);
     grid-template-areas:
       "title title title"
-      "img description description"
-      "details details details"
-      "experience experience ."
+      "about about about"
       "skills skills skills"
-      "education education .";
+      "experience experience experience"
+      "education education education";
   }
 
   .description {
@@ -351,6 +363,12 @@ main.container {
 
   #skills {
     grid-area: skills;
+  }
+
+
+  #skills ul li{
+    padding: 10px;
+    font-size: 15px;
   }
 
 
