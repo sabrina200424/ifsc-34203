@@ -1,0 +1,33 @@
+
+
+/* :root{
+    --bs-body-color: #FFFBDE; 
+    --bs-secondary-color: #A8DB7B; 
+    --bs-tertiary-color: #518F19; 
+    --bg-primary-subtle: #A8DB7B;
+
+} */
+
+
+.bg-body-tertiary{
+    background-color: #FFFBDE;
+}
+
+.bs-secondary-color{
+    background-color: #A8DB7B;
+}
+
+.bs-tertiary-color{
+    background-color: #FFFBDE;
+}
+
+.bs-info{
+    background-color: #8CB369;
+}
+
+.bs-dark-text{
+    color: #8CB369;
+}
+
+
+
