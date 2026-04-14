@@ -57,3 +57,8 @@
 main{
     background-color: #A8DB7B;
 }
+
+#links ul {
+    display: flex;
+    flex-direction: column;
+}
