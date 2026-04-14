@@ -25,9 +25,35 @@
     background-color: #8CB369;
 }
 
+.bs-info-subtle{
+    background-color: #E9EDC9;
+}
+
 .bs-dark-text{
     color: #8CB369;
 }
 
 
+.bs-light-text{
+    color:#F5F5F5; 
+}
 
+.text-body-secondary{
+    text-align: center;
+}
+
+.mb-2{
+    font-size: 30px;
+}
+
+.mb-1{
+    font-size: 20px;
+}
+
+.mb-0{
+    font-size: 16px;
+}
+
+main{
+    background-color: #A8DB7B;
+}
