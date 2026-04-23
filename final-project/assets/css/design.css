@@ -1,0 +1,103 @@
+
+
+body{
+    margin: 0px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+:root{
+    --background-body-color: #fff8ce; 
+    --background-header-color: #a8db7b; 
+    --background-footer-color: #8cb369; 
+    --background-instructions-color: #e9edc9; 
+    --green-text-color: #518f19;
+    --white-text-color: #f5f5f5;
+    
+}
+
+main{
+    background-color: var(--background-body-color);
+}
+
+.primary{
+    background-color: var(--background-header-color);
+    margin-top: 0px;
+    padding: 60px;
+}
+
+#title{
+    background-color: #fff8ce;
+    padding: 30px;
+    margin-right: 240px;
+    margin-left: 240px;
+    color: var(--green-text-color);
+    text-align: center;
+}
+
+#item-links{
+    display: grid;
+}
+
+#item-links ul { 
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: center;
+    
+}
+
+#item-links ul li{
+    background-color: var(--background-instructions-color);
+    margin: 15px;
+    padding: 12px;
+    list-style-type: none;
+    font-weight: 600;
+}
+
+
+#instructions{
+    display: flex;
+    display: grid;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+
+#first, #second, #third, #fourth {
+    background-color: var(--background-instructions-color);
+    margin-top: 4px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight:600; 
+    
+}
+
+
+
+footer{
+    background-color: var(--background-footer-color);
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+h2{
+    color: var(--white-text-color); 
+    text-align: center;
+    font-size: 30px;
+}
+
+#description{
+    color: var(--white-text-color);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+#copyright{
+    color: var(--white-text-color);
+    font-weight: 500;
+    text-align: center;
+}
