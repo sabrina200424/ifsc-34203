@@ -34,14 +34,14 @@ body{
     --background-footer-color: #8cb369; 
     --background-instructions-color: #e9edc9; 
     --green-text-color: #518f19;
-    --green-text-two: #284d07;
+    --green-text-two: #1c3a02;
     --white-text-color: #f5f5f5;
     
 }
 
 main{
     /* background-image: url(../img/grid-12.png); */
-    background-color: var(--main-body-color);
+    /* background-color: var(--main-body-color); */
     display: grid;
     grid-template-columns: (12, 1fr);
     grid-template-rows: auto;
@@ -94,7 +94,7 @@ main{
 } */
 
 #first{
-    background-color: #518f19;
+    background-color: var(--background-instructions-color);
     margin-bottom: 10px;
     grid-column-start: 1;
     grid-column-end: 5;
@@ -105,7 +105,7 @@ main{
 
 
 #second{
-    background-color: #a8db7b;
+    background-color: var(--background-instructions-color);
     margin-bottom: 10px;
     grid-column-start: 5;
     grid-column-end: 9;
@@ -114,7 +114,7 @@ main{
 }
 
 #third{
-    background-color: #e9edc9;
+    background-color: var(--background-instructions-color);
     margin-bottom: 10px;
     grid-column-start: 1;
     grid-column-end: 5;
@@ -123,7 +123,7 @@ main{
 }
 
 #fourth{
-    background-color: #8cb369;
+    background-color: var(--background-instructions-color);
     margin-bottom: 10px;
     grid-column-start: 5;
     grid-column-end: 9;
@@ -175,13 +175,16 @@ p{
 li, a{
     color: var(--green-text-two);
     font-weight: 600;
-    text-decoration: none;
 }
 
-img, #sunset-picture, #first-step, #second-step, #third-step, #fourth-step{
+img, #sunset-picture, #sunset-reference, #first-step, #second-step, #third-step, #fourth-step{
     display: flex;
     justify-content: center;
     
+}
+
+#sunset-reference{
+    border: 8px double var(--green-text-two);
 }
 
 
@@ -220,10 +223,10 @@ img, #sunset-picture, #first-step, #second-step, #third-step, #fourth-step{
         grid-row-end: 4;
     }
 
-    #sunset-picture{
+    #sunset-picture, #sunset-reference, img{
         display: flex;
         justify-content: center;
-        
+        margin-bottom: 20px;
     }
 
     #item-links{
@@ -298,7 +301,7 @@ img, #sunset-picture, #first-step, #second-step, #third-step, #fourth-step{
 @media screen and (min-width: 700px){
 
     main{
-        max-width: 900px;
+        max-width: 980px;
         display: grid;
         grid-template-columns: (8, 1fr);
         grid-template-rows: auto;
@@ -323,7 +326,7 @@ img, #sunset-picture, #first-step, #second-step, #third-step, #fourth-step{
         grid-row-end: 4;
     }
 
-    #sunset-picture{
+    #sunset-picture, #sunset-reference, img{
         display: flex;
         justify-content: center;
         padding-left: 0px;
@@ -385,7 +388,7 @@ img, #sunset-picture, #first-step, #second-step, #third-step, #fourth-step{
 /* Desktop View */ 
 
 
-@media screen and (min-width: 950px){
+@media screen and (min-width: 1000px){
 
 
     main{
@@ -409,6 +412,12 @@ img, #sunset-picture, #first-step, #second-step, #third-step, #fourth-step{
         grid-column-end: 13;
         grid-row-start: 3;
         grid-row-end: 4; 
+    }
+
+
+    #sunset-picture, #sunset-reference, img{
+        display: flex;
+        justify-content: center;
     }
 
 
